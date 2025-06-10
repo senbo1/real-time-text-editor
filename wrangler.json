@@ -18,11 +18,17 @@
   "durable_objects": {
     "bindings": [
       {
-        "class_name": "DocumentDurableObject",
-        "name": "DOCUMENT_DURABLE_OBJECT"
+        "name": "DOCUMENT_DURABLE_OBJECT",
+        "class_name": "DocumentDurableObject"
       }
     ]
-  }
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["DocumentDurableObject"]
+    }
+  ]
   /**
    * Smart Placement
    * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
