@@ -1,6 +1,6 @@
 # Real-Time Text Editor
 
-A collaborative real-time text editor built with React and Durable Objects. Multiple users can edit the same document simultaneously with real-time synchronization.
+A collaborative real-time text editor built with React and Durable Objects.
 
 ## 🎥 Demo
 
@@ -13,13 +13,11 @@ A collaborative real-time text editor built with React and Durable Objects. Mult
 - **Cost-Efficient WebSockets**: Uses Cloudflare Durable Objects WebSocket hibernation to reduce costs during periods of inactivity
 - **Clean UI**: Simple, Google Docs-like interface built with React and Tailwind CSS
 
-The application consists of two main components:
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 19, TypeScript, Tailwind CSS, Vite
 - **Backend**: Cloudflare Workers, Durable Objects, Hono
-- **Build Tools**: Vite, wrangler
+- **Build Tools**: Vite, Wrangler
 - **Package Manager**: pnpm
 - **Deployment**: Cloudflare Workers
 
