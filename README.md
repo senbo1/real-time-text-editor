@@ -1,83 +1,55 @@
-# React + Vite + Hono + Cloudflare Workers
+# Real-Time Text Editor
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/vite-react-template)
+A collaborative real-time text editor built with React and Durable Objects. Multiple users can edit the same document simultaneously with real-time synchronization.
 
-This template provides a minimal setup for building a React application with TypeScript and Vite, designed to run on Cloudflare Workers. It features hot module replacement, ESLint integration, and the flexibility of Workers deployments.
+## 🎥 Demo
 
-![React + TypeScript + Vite + Cloudflare Workers](https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/fc7b4b62-442b-4769-641b-ad4422d74300/public)
+[![Watch the Demo](https://img.youtube.com/vi/53e1DkrSiHs/0.jpg)](https://www.youtube.com/watch?v=53e1DkrSiHs)
 
-<!-- dash-content-start -->
+## 🚀 Features
 
-🚀 Supercharge your web development with this powerful stack:
+- **Real-time Collaboration**: Multiple users can edit documents simultaneously with last write wins strategy.
+- **Persistent Storage**: Documents are automatically saved using Cloudflare Durable Objects
+- **Cost-Efficient WebSockets**: Uses Cloudflare Durable Objects WebSocket hibernation to reduce costs during periods of inactivity
+- **Clean UI**: Simple, Google Docs-like interface built with React and Tailwind CSS
 
-- [**React**](https://react.dev/) - A modern UI library for building interactive interfaces
-- [**Vite**](https://vite.dev/) - Lightning-fast build tooling and development server
-- [**Hono**](https://hono.dev/) - Ultralight, modern backend framework
-- [**Cloudflare Workers**](https://developers.cloudflare.com/workers/) - Edge computing platform for global deployment
+The application consists of two main components:
 
-### ✨ Key Features
+## 🛠️ Tech Stack
 
-- 🔥 Hot Module Replacement (HMR) for rapid development
-- 📦 TypeScript support out of the box
-- 🛠️ ESLint configuration included
-- ⚡ Zero-config deployment to Cloudflare's global network
-- 🎯 API routes with Hono's elegant routing
-- 🔄 Full-stack development setup
+- **Frontend**: React 19, TypeScript, Tailwind CSS, Vite
+- **Backend**: Cloudflare Workers, Durable Objects, Hono
+- **Build Tools**: Vite, wrangler
+- **Package Manager**: pnpm
+- **Deployment**: Cloudflare Workers
 
-Get started in minutes with local development or deploy directly via the Cloudflare dashboard. Perfect for building modern, performant web applications at the edge.
+## 📦 Installation
 
-<!-- dash-content-end -->
-
-## Getting Started
-
-To start a new project with this template, run:
+1. Clone the repository:
 
 ```bash
-npm create cloudflare@latest -- --template=cloudflare/templates/vite-react-template
+git clone https://github.com/senbo1/real-time-text-editor.git
+cd real-time-text-editor
 ```
 
-A live deployment of this template is available at:
-[https://react-vite-template.templates.workers.dev](https://react-vite-template.templates.workers.dev)
-
-## Development
-
-Install dependencies:
+2. Install dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
-Start the development server with:
+3. Start the development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
-Your application will be available at [http://localhost:5173](http://localhost:5173).
+## 📝 Available Scripts
 
-## Production
-
-Build your project for production:
-
-```bash
-npm run build
-```
-
-Preview your build locally:
-
-```bash
-npm run preview
-```
-
-Deploy your project to Cloudflare Workers:
-
-```bash
-npm run build && npm run deploy
-```
-
-## Additional Resources
-
-- [Cloudflare Workers Documentation](https://developers.cloudflare.com/workers/)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Documentation](https://reactjs.org/)
-- [Hono Documentation](https://hono.dev/)
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
+- `pnpm deploy` - Deploy to Cloudflare Workers
+- `pnpm check` - Type check and dry-run deployment
+- `pnpm lint` - Run ESLint
+- `pnpm cf-typegen` - Generate Cloudflare types

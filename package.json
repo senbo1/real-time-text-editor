@@ -1,6 +1,6 @@
 {
-  "name": "vite-react-template",
-  "description": "A template for building a React application with Vite, Hono, and Cloudflare Workers",
+  "name": "real-time-text-editor",
+  "description": "A real-time text editor built with Cloudflare Durable Object",
   "version": "0.0.0",
   "cloudflare": {
     "label": "Vite React Template",
@@ -15,9 +15,12 @@
     "publish": true
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.8",
     "hono": "4.7.7",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "react-router": "^7.6.2",
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "1.2.4",
